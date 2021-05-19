@@ -1,0 +1,327 @@
+/*font-family: 'Bebas Neue', cursive;*/
+/*font-family: 'Oswald', sans-serif;*/
+
+body {
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+    line-height: 2px;
+    color: black;
+    /*background-color: black;*/
+    /*background: linear-gradient(45deg, #ffffff, #e2efe3);*/
+}
+
+
+*,
+*:before,
+*:after
+{
+    box-sizing: border-box;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1600px;
+    max-height: 650px;
+
+    margin: 0 auto;
+    position: absolute;
+    background: url("../img/backk.gif");
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%;
+
+
+    height: auto;
+}
+
+
+/*header*/
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 40px;
+
+
+}
+
+.logo img{
+    width: 150px;
+    height: 15px;
+    margin-right: 30px;
+}
+
+.nav{
+    margin-right: 500px;
+    position: relative;
+
+
+}
+
+.nav_link{
+    list-style-type: none;
+    display: inline-block;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    font-size: 15px;
+    width: auto;
+    color: white;
+    margin-right: 50px;
+    transition: all .2s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+}
+
+.nav_link:hover{
+    color:  #f2b541;
+    transition: width 0.3s ease;
+}
+
+.tools img{
+    width: 600px;
+    height: 320px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*MAin*/
+.cover{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.img{
+
+}
+.img img{
+    width: 300px;
+    height: 400px;
+    margin: 50px 50px 50px 70px;
+    border: 5px solid #88714d;
+    position: relative;
+    z-index: 1;
+
+}
+
+.block_1 img{
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.block_2 img{
+    width: 95px;
+    height: 100px;
+    position: absolute;
+    top: 123px;
+    left: 310px;
+    z-index:2;
+}
+
+
+.block_3 img{
+    width: 80px;
+    height: 85px;
+    position: absolute;
+    top: 150px;
+    left: 290px;
+    z-index:2;
+}
+
+.main_txt{
+    display: inline-block;
+    justify-content: space-between;
+    position: center;
+    text-align: center;
+
+}
+
+.text_around{
+    font-family: 'Medula One', cursive;
+    font-size: 70px;
+    color: white;
+    margin-top: 280px;
+
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+.text_around b{
+    /*position: absolute;*/
+    left: 350px;
+    width: 0;
+}
+
+.text_around b:nth-of-type(-n+12) {
+    /*bottom: 50%; !* отступ от центра по радиусу *!*/
+    bottom: 0;
+    -ms-transform-origin: 0% 100%;
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    padding-bottom: 300px; /* отступ от центра круга */
+}
+
+.text_around b:nth-of-type(1) {-ms-transform: rotate(327deg); -webkit-transform: rotate(327deg); transform: rotate(327deg);}
+.text_around b:nth-of-type(2) {-ms-transform: rotate(333deg); -webkit-transform: rotate(333deg); transform: rotate(333deg);}
+.text_around b:nth-of-type(3) {-ms-transform: rotate(339deg); -webkit-transform: rotate(339deg); transform: rotate(339deg);}
+.text_around b:nth-of-type(4) {-ms-transform: rotate(345deg); -webkit-transform: rotate(345deg); transform: rotate(345deg);} /*Укажем расположение для буквы П*/
+.text_around b:nth-of-type(5) {-ms-transform: rotate(351deg); -webkit-transform: rotate(351deg); transform: rotate(351deg);} /*Укажем расположение для буквы Р*/
+.text_around b:nth-of-type(6) {-ms-transform: rotate(357deg); -webkit-transform: rotate(357deg); transform: rotate(357deg);} /*Укажем расположение для буквы Е*/
+.text_around b:nth-of-type(7) {-ms-transform: rotate(3deg); -webkit-transform: rotate(3deg); transform: rotate(3deg);} /*Укажем расположение для буквы В*/
+.text_around b:nth-of-type(8) {-ms-transform: rotate(9deg); -webkit-transform: rotate(9deg); transform: rotate(9deg);} /*Укажем расположение для буквы Е*/
+.text_around b:nth-of-type(9) {-ms-transform: rotate(15deg); -webkit-transform: rotate(15deg); transform: rotate(15deg);} /*Укажем расположение для буквы Т*/
+.text_around b:nth-of-type(10) {-ms-transform: rotate(21deg); -webkit-transform: rotate(21deg); transform: rotate(21deg);} /*Укажем расположение для буквы Е*/
+.text_around b:nth-of-type(11) {-ms-transform: rotate(24deg); -webkit-transform: rotate(24deg); transform: rotate(24deg);} /*Укажем расположение для буквы Т*/
+.text_around b:nth-of-type(12) {-ms-transform: rotate(29deg); -webkit-transform: rotate(29deg); transform: rotate(29deg);}
+
+
+
+.title{
+
+    margin-top: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    letter-spacing: 3px;
+    color: white;
+    margin-bottom: 80px;
+    margin-right: 300px;
+    position: relative;
+
+}
+
+.orange_title{
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #f2b541;
+    margin-bottom: 30px;
+    margin-left: 12px;
+    margin-right: 300px;
+
+}
+
+.subtitle{
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    opacity: 0.8;
+    font-weight: lighter;
+    font-size: 15px;
+    padding-right: 150px;
+    padding-left: 165px;
+    line-height: 2;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    margin-right: 350px;
+    margin-left: 50px;
+
+}
+
+
+.button{
+    margin-left: 30px;
+    margin-right: 280px;
+}
+.btn{
+    width: 100px;
+    height: 20px;
+    background-color: #f2b541;
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 10px;
+    color: black;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #f2b541;
+    transform: translate3d(-10px,-10px,0);
+
+    transition: transform .3s linear;
+}
+
+.block_4 img{
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    top:245px;
+    left: 600px;
+
+}
+
+.block_5 img{
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    top:245px;
+    right: 483px;
+}
+
+/*Social*/
+
+.social{
+    width: 50px;
+    display: grid;
+    justify-content: left;
+    position: absolute;
+    right: 130px;
+    bottom: 100px;
+
+
+
+}
+.social_item{
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    color: #f2b541;
+    text-decoration: none;
+
+    border-radius: 50%;
+    padding-left: 6px;
+    padding-top: 4px;
+    margin-bottom: 10px;
+
+}
+
+.social_item:hover{
+    background-color: #f2b541;
+    color: black;
+}
+
+.block_6 img{
+    width: 2px;
+    height:100px;
+    position: absolute;
+    bottom:0;
+    right: 165px;
+}
+
+
+
+
+
+
